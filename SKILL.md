@@ -6,6 +6,11 @@ name: xhs-timeline
 description: "小红薯公开数据时间线（只读）：关键词搜笔记、爆款选题、笔记详情、评论舆情、博主作品、粉丝获赞与收藏，输出 JSON，不登录不发布。触发词：小红书、小红薯、xhs、rednote、笔记链接、博主主页、竞品监控、KOL筛选、评论分析。用户要查小红书笔记、评论、选题、竞品或舆情时使用；抖音、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.2.3
+display_name: "小红薯成长时间线｜笔记发布节奏·历史笔记·话题升温·评论变化"
+display_name_en: "Xiaohongshu Timeline"
+description_zh: "小红薯（小红书）公开数据时间线接口（只读）：关键词搜笔记（类型/排序/时间窗）、笔记详情、评论舆情、博主作品与粉丝获赞收藏，按发布时间排布并回溯历史，复盘笔记发布节奏、话题升温与评论变化；不登录账号、无封号风险，统一 JSON 信封，零第三方依赖"
+description_en: "Read-only Xiaohongshu (RED) timeline data source, no account login, no ban risk. One command returns public notes as structured JSON ordered by publish time, so AI can rebuild a creator timeline and review cadence. Capabilities: 1) Keyword note search with type (all/video/image), sort by general, newest, most liked, most commented or most collected, inside 1/7/180-day windows. 2) Note detail: body text, images, interactions, author. 3) Comment scraping with a recent-N-days filter (--expired_at) for sentiment review. 4) Creator note listing with publish times and interactions; interactions-only mode (--limit 0) returns fans, total likes and collects. 5) Recipes: map posting rhythm, compare metrics before vs after a topic heats up, spot viral topics. Scale: pay-as-you-go up to 10,000 items per call; monthly plans cap search at 40, posts at 30, comments at 20, then PLAN_LIMIT. Zero dependencies, Node.js 16.14+, GUAIKEI_API_TOKEN."
+author: "新郑市怪奇信息技术工作室"
 category: 数据分析
 homepage: https://www.guaikei.com
 metadata:
